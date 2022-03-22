@@ -1,0 +1,27 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/imagens/favicon.png">
+    <link rel="stylesheet" href="/principal.css">
+    <link rel="stylesheet" href="/questionarios.css">
+    <title>Quiz {{questionario.titulo}}</title>
+</head>
+<body>
+    {{#if mensagem.success_msg}}
+        <span class="retornoAcertos">{{mensagem.success_msg}}</span>
+    {{/if}}
+
+
+    <h1 id="tituloQuestionario">Ranking: {{questionario.titulo}}</h1>
+    <table>
+        <tr id="first">
+            <th>Nome</th>
+            <th>Pontuação</th>
+        </tr>
+        {{#each questionario.tabela}}
+            <tr>        
+                <td>{{this.nome}}</td>
+                <td>{{this.pontuacao}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</body>

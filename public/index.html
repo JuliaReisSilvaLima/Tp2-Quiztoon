@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiztoon</title>
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="questionarios.css">
+</head>
+
+<body id="inicial">
+    <div id="botoesParticEMusica">
+        <button id="participantes" class="botoesMenu"><img src="imagens/participantesINFO.png"></button>
+        <audio id="som" src="/audio/soltaosomdj.mp3" loop></audio>
+        <button id="musica" class="botoesMenu"><img src="/imagens/mute.png"></button>
+    </div>
+    <div class="modal">
+        <header>
+            <span class="fecharModal">X</span>
+        </header>
+        <div class="corpoModal">
+            <h2>Info</h2>
+            <p>Nosso site, o Quiztoon, é um site que permite você criar ou responder Quizzes.
+                Clique em "Jogar" para ver os questionários já criados por outras pessoas, e em "Criar"
+                para criar você mesmo um Quiz. Divirta-se!
+            </p>
+            <h2>Participantes</h2>
+            <p>Gabriel, Júlia, Letícia e Nathan</p>
+        </div>
+    </div>
+
+    <div id="mascara"></div>
+    <div id="quadroInicial">
+        <img id="logo" src="imagens/favicon.png"><h1>Quiztoon</h1>
+        <button id="jogar">Jogar</button>
+        <br>
+        <button id="criar">Criar</button>
+        <br>
+        <button id="deslogar">Desconectar</button>
+    </div>
+    <div id="cadastro">
+        <p><img src="imagens/aviso.png"> Faça seu login ou cadastre-se para continuar!</p>
+        <label for="nome">Usuário:</label>
+        <input type="text" id="nome" maxlength="20">
+        <br>
+        <label for="manterConectado">Mantenha-me conectado</label>
+        <input id="manterConectado" type="checkbox">
+        <button id="cadastrar"> Cadastrar </button>
+        <button id="login">Login</button>
+        
+    </div>
+</body>
+<script src = "webStorage.js"> </script>
+<script src="/botoes.js" charset="utf-8"></script>
+<script src="/music.js"></script>
+
+</html>

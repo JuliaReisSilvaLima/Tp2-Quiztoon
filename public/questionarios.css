@@ -1,0 +1,378 @@
+body{   
+    background-image: url(imagens/fundo.png);
+    background: linear-gradient(45deg, #dcdcdc,#787afa,#A2E497,#5244FB);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+}
+
+/* Retirado do canal Willian Justan Cursos - tutorial de como criar um background gradiente animado :)*/
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.adicionarPerguntas h1{
+    color: #7c7dd8;
+    text-decoration: none;
+    font-size: 250%;
+}
+.adicionarPerguntas{
+    display:flex;
+    flex-wrap: wrap;
+    padding: auto;
+    justify-content: space-between; 
+    margin-bottom: 2%;
+}
+
+.divQuestionario:hover {
+    transition: 0.3s;
+    transform: scale(1.09);
+}
+
+.divQuestionario{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-size: 30px; */
+    padding: 15px; 
+    margin-bottom: 3%;
+    background-color:whitesmoke;
+    border: 10px ridge  white;
+    border-bottom-left-radius: 20px;
+    width: 42%;
+}
+
+.adicionarPerguntas a:hover, .adicionarPerguntas span:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    background-color: #7c7dd8;
+}
+
+h1 {
+    color: black;
+    font-size: 350%;
+    font-family: 'Maiandra GD', sans-serif;
+}
+
+label {
+    font-size: 30px;
+    font-family:'Lucida Sans', sans-serif;
+    color: black;
+    height: auto;
+}
+
+input, select,option{
+    padding: 2%;
+    font-size: 170%;
+    width: 60%;
+    height: 15px;
+    margin-bottom: 5%;
+} 
+
+#manterConectado {
+    width: 13%;
+}
+
+.adicionarPerguntas {
+    background-color: rgb(235, 240, 243);
+    margin-left: 15%; 
+    margin-right: 15%;
+    padding: 5%;
+    border-radius: 50px; 
+    border: 3px solid white;
+    
+}
+
+#navbar {
+    background-color: white;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    left: 1%;
+    bottom: 1%;
+    float: left;
+    text-align: left;
+    position: fixed;
+    
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: black;
+}
+
+.perguntaEscondida{
+    display:none;
+}
+
+.perguntaMostrar{
+    display: block;
+    background-color: white;
+}
+
+/*menu de navegacao*/
+
+.blocos{
+    /* font-size: 30px; */
+    color: white;
+    text-decoration: none;
+    left: 0%;
+    bottom: 1%;
+    float: left;
+    text-align: left;
+    position: fixed;
+    padding: 1%;
+}
+
+nav li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav p:hover {
+    color: yellow;
+}
+
+.blocos{
+    display: inline-block;
+    margin: 0;
+}
+
+.blocos p{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 90%;
+    opacity: 0;
+    transition: linear 0.2s;
+    clear: both;
+    display: inline;
+}
+
+.blocos :hover p {
+      opacity: 1;
+} 
+
+.botao {
+    width: 50px;
+    position: relative;
+    bottom: 12.5px;
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+/* MUSIQUINHA TUTS TUTS VEM CURTIR O NATAL*/
+#musicaOff{
+    display: none;
+}
+
+/* Pagina de fazer questionario */
+.perguntaMostrar {
+    padding: 0.5%;
+    border-radius: 25px;
+    box-shadow: 4px 3px 3px  rgba(0, 0, 0, 0.76);
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.perguntaMostrar h2{
+    font-size: 260%;
+    font-family: 'Arial', sans-serif;
+}
+.perguntaMostrar  input{
+    width: 5%;
+}
+
+.botoesMenu{
+    border: none;
+    text-align: center;
+}
+
+button:not(.botoesMenu) {
+  background-color: #FCFCFD;
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  color: #36395A;
+  cursor: pointer;
+  height: 100px;
+  justify-content: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .05s;
+  will-change: box-shadow,transform;
+  font-size: 180%;
+  padding: 20px;
+  font-size: 20px;
+  display: inline;
+} 
+
+button:not(.botoesMenu):focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+button:not(.botoesMenu):hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:not(.botoesMenu):active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+table {
+    background-color:rgb(218, 232, 251);
+    width: 30%;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+    border: 3px solid black;
+    margin-bottom: 3%;
+}
+
+th {
+    /*background: linear-gradient(to left,#5F9EA0,#9370DB); */
+    border-bottom: 3px solid black;
+}
+td {
+    font-size: 200%;
+    padding: 3%;
+}
+
+#first {
+    background: linear-gradient(45deg,#5F9EA0,#9370DB);
+    font-size: 250%;
+}
+
+tr{
+    padding: 5%;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.retornoAcertos {
+    position: absolute;
+    left: 0.5%;
+    font-size: 170%;
+    font-family: 'verdana';
+    background-color:rgb(218, 232, 251);
+    border: 3px dashed black;
+    border-radius: 20px;
+    padding: 2%;
+    margin-bottom: 3%;
+    animation: sumir 2s ease-in-out 0s infinite alternate;
+}
+
+
+@keyframes sumir {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+#tituloQuestionario{
+    font-family: 'Maiandra GD', sans-serif;
+}
+
+#voltar-para-topo {
+    color: black;
+    border: 5px solid black;
+    border-radius: 60%;
+    padding: 10px;
+    font-size: 45px;
+    width: 30px;
+    height: 38px;
+    line-height: 0.7em;
+    bottom: 50px;
+    right: 15px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+}
+
+#logo {
+    height: 40%;
+    width: 40%;
+}
+
+
+#containerChat{
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1%;
+}
+
+#chat{
+    margin:4%;
+    border: 1px solid black;
+    max-height: 200px;
+    position: relative;
+    /* white-space: nowrap; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+
+#containerChat {
+    max-height: 400px;
+    max-width: 25%;
+    position: absolute;
+    bottom: 2%;
+    width: auto;
+    border: 1px solid black;
+    right: 1.4%;
+    background:linear-gradient(#A2E497,#7c7dd8);
+    box-shadow: 4px 3px 3px  rgba(0, 0, 0, 0.76);
+    border: 3px solid black;
+    
+}
+
+#chat p{
+    text-align: justify;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 1%;
+    word-wrap: break-word;
+}
+
+.salaSincrona{
+    cursor: pointer;
+}
+#containerChat h3{
+    font-size: 160%;
+    font-family: 'Maiandra GD', sans-serif;
+}
+
+#enviarMMensagem{
+    border-radius: 70%;
+    height: 70px;
+}
+
+#enviarMMensagem img {
+    height: 30px;
+    width: 30px;
+}
